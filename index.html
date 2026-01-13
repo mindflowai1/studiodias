@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STUDIO DIAS - Salão 5 Estrelas no Barreiro</title>
+    <link rel="icon" type="image/png" href="https://ptotpfdlgsohxmsrfczs.supabase.co/storage/v1/object/public/bucket/logo%20dias.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                light: '#F4D03F',
+                DEFAULT: '#D4AF37',
+                dark: '#996515',
+                soft: 'rgba(212, 175, 55, 0.15)',
+              },
+              brand: {
+                50: '#18181b',
+                100: '#27272a',
+                200: '#3f3f46',
+                300: '#52525b',
+                400: '#71717a',
+                500: '#ffffff',
+                600: '#f4f4f5',
+                700: '#e4e4e7',
+                800: '#d4d4d8',
+                900: '#000000',
+              },
+              surface: {
+                DEFAULT: '#050505',
+                elevated: '#0f0f0f',
+                card: '#141414',
+              }
+            },
+            fontFamily: {
+              sans: ['Lato', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.5)',
+              'glow': '0 0 15px rgba(255, 255, 255, 0.1)',
+              'gold': '0 0 25px rgba(212, 175, 55, 0.15)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #050505;
+        color: #e4e4e7;
+      }
+      .text-gradient-gold {
+        background: linear-gradient(to right, #D4AF37, #F4D03F, #996515);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .bg-gradient-gold {
+        background: linear-gradient(135deg, #996515 0%, #D4AF37 50%, #F4D03F 100%);
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #996515;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
